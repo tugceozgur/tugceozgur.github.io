@@ -78,13 +78,25 @@ flex-grow: 0;
 
 .button-icon {
   /* Mail */
-  width: 16px;
-  height: 12px;
+  width: 19px;
+  height: 19px;
   /* Inside auto layout */
 
   flex: none;
   order: 0;
   flex-grow: 0;
+}
+
+.button-clicked {
+  background-color: rgb(112, 109, 109);
+  color: rgb(78, 84, 84);
+  border-color: rgb(93, 93, 92);
+  /* other styles here */
+  position: absolute;
+  width: 247px;
+  height: 34px;
+  left: 151px;
+  top: 429px;
 }
 
 .main--title {
@@ -128,19 +140,19 @@ flex-grow: 0;
 
   position: absolute;
   width: 247px;
-  height: 201px;
+  height: 240px;
   left: 151px;
-  top: 435px;
-
+  top: 490px;
 }
+
 
 .about--title{
   /* About */
   position: absolute;
   width: 242.71px;
-  height: 21px;
+  height: 11px;
   left: 151px;
-  top: 475px;
+  top: 415px;
 
   font-family: 'Inter';
   font-style: normal;
@@ -158,12 +170,12 @@ flex-grow: 0;
   width: 247px;
   height: 61px;
   left: 151px;
-  top: 501px;
+  top: 450px;
 
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  font-size: 9.24px;
+  font-size: 10.24px;
   line-height: 150%;
   /* or 15px */
 
@@ -176,12 +188,12 @@ flex-grow: 0;
   width: 247px;
   height: 91px;
   left: 151px;
-  top: 681px;
+  top: 675px;
 
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  font-size: 9.24px;
+  font-size: 10.24px;
   line-height: 150%;
   /* or 15px */
 
@@ -190,45 +202,73 @@ flex-grow: 0;
 }
 
 .rectangle-footer{
-  position: absolute;
+  /* position: absolute;
   width: 317px;
   height: 64px;
   left: 116px;
   top: 760px;
 
-  background: #161619;
-  border-radius: 0px 0px 10px 10px;
-}
+  background: #717181;
+  border-radius: 0px 0px 10px 10px; */
 
-
-.nav--twitter{
   position: absolute;
-  left: 26.64%;
-  right: 48.82%;
-  top: 19.8%;
-  bottom: 7.32%;
-
-}
-
-.nav--linkedin{
-  position: absolute;
-  left: 46.64%;
-  right: 58.82%;
-  top: 19.8%;
-  bottom: 7.32%;
-
-}
-
-.nav--github{
-  /* GitHub Icon */
-  position: absolute;
-  left: 66.55%;
-  right: 68.91%;
-  top: 19.8%;
-  bottom: 7.32%;
-
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 20px 0;
 }
 
 .nav-link{
   align-items: center;
+}
+
+.home-social-icons {
+  /* shape */
+  position: absolute !important;
+  display: inline-block !important;
+  width: 30px !important;
+  height: 30px !important;
+  text-align: center !important;
+  font-size: 1.2em !important;
+  line-height: 2em !important;
+  background: rgba(255, 255, 255, 0.972) !important;
+  border-radius: 20% !important;
+  transition: 0.5s !important;
+}
+
+.home-social-icons::before {
+  content: "";
+  position: absolute;
+  top: 10;
+  left: 10;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #68187a;
+  transition: 0.5s;
+  transform: scale(0.9);
+  z-index: -1;
+}
+
+.home-social-icons:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #801f95;
+}
+
+.home-social-icons:hover {
+  color: #87209e;
+  box-shadow: 0 0 5px #87209e;
+  text-shadow: 0 0 2px #87209e;
+}
+
+.social-icons {
+  display: inline-block !important;
+  padding-right: 9px;
+  padding-left: 35px;
+  padding-bottom: 200px;
+}
+
+.icon-colour {
+  color: #700c86 !important;
 }

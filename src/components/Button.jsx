@@ -1,20 +1,18 @@
-import React from 'react';
+// import React, { useState } from "react"
+// function Button() {
 
-function Button(props) {
-  return (
-    <button
-      className="button"
-      onClick={props.onClick}
-    >
-      <span className="button-text">Email</span>
-      <img
-          className="button-icon"
-          src="../assets/Icon.png"
-          alt="Button Icon"
-        />
-      {props.label}
-    </button>
-  );
-}
+//   const [clicked, setClicked] = useState(false);
 
-export default Button;
+
+//   return (
+//     <div className={clicked ? "button-clicked" : "button"} onClick={() => { window.location.href = "https://www.linkedin.com/in/tugce-ozgur-oztetik-a32b65a5/"; }}>
+//       <span className="button-text">LinkedIn</span>
+//       <img
+//         className="button-icon"
+//         src="../assets/linkedin-Icon.png"
+//         alt="Button Icon"
+//       />
+//     </div>
+//   );
+// }
+// export default Button;
